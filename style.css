@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Lato:wght@100;300;400;500;700&family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+	font-family: "Lato", sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	background-color: #f5f8fa;
+}
+nav {
+	display: flex;
+	margin: 2rem 4rem;
+	justify-content: space-between;
+	border-bottom: 1px solid #e0e6ea;
+	padding-bottom: 0.5rem;
+}
+.links ul {
+	list-style-type: none;
+	display: flex;
+	padding-top: 0.5rem;
+	/* justify-content: space-evenly; */
+}
+nav ul a {
+	text-decoration: none;
+	color: #1d2c3c;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+nav ul li {
+	padding: 0 1.5rem;
+}
+nav ul button {
+	padding: 0.3rem 1rem;
+	color: #1d2c3c;
+	font-size: 0.875rem;
+	font-weight: bold;
+	margin-left: 2rem;
+	border-radius: 0.5rem;
+	border: 1px solid #646e7a;
+}
+main {
+	display: flex;
+	width: 60%;
+	margin: 5rem auto;
+}
+.left {
+	background-color: #ffffff;
+}
+.left .card-header {
+	font-size: 1.875rem;
+	color: #1d2c3c;
+	padding: 2rem 2rem 1rem 2rem;
+	border-bottom: 1px solid #e0e6ea;
+}
+
+.card-body form {
+	padding-left: 2rem;
+	padding-top: 1rem;
+}
+.card-body form .top {
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 1.5rem;
+	row-gap: 1rem;
+}
+.one,
+.two {
+	font-size: 1.15rem;
+	font-weight: bold;
+	color: #1d2c3c;
+	padding: 1rem 0;
+	text-transform: capitalize;
+}
+form {
+	border-bottom: 1px solid #e0e6ea;
+	padding-right: 2rem;
+}
+form span {
+	border: 1px solid #548bc5;
+	padding: 0rem 0.5rem;
+	border-radius: 50%;
+	color: #548bc5;
+	margin-right: 0.5rem;
+}
+form label {
+	font-size: 14px;
+	color: #1d2c3c;
+	text-transform: capitalize;
+}
+form input {
+	background-color: #ccd0d2;
+	width: 18rem;
+	height: 2.2rem;
+	padding-left: 0.8rem;
+
+	border-radius: 0.3rem;
+	border: none;
+}
+.card-body form .top p:last-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.card-body form.top p:last-child input {
+	width: 23.1rem;
+}
+.bottom {
+	padding-bottom: 2rem;
+}
+.card-body form.bottom input {
+	width: 29.5rem;
+}
+.card-footer {
+	padding-top: 2rem;
+	padding-left: 2rem;
+}
+.card-footer button {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #038e7d;
+	padding: 0.7rem 15rem;
+	margin: 0 auto;
+	text-transform: capitalize;
+	border-radius: 5px;
+	border: none;
+}
+
+.card-footer button + p {
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #646e7a;
+	text-align: center;
+	margin-top: 1rem;
+}
+.card-footer p a {
+	text-decoration: none;
+	color: #646e7a;
+}
+.card-footer button + p span {
+	font-weight: 600;
+	color: #1d2c3c;
+}
+.card-footer button + p a:first-child {
+	border: 1px solid #548bc5;
+	padding: 0.01rem 0.25rem;
+	border-radius: 50%;
+}
+.card-footer p + p {
+	font-size: 0.7rem;
+	background-color: #dadada;
+	color: #ffffff;
+	margin-top: 1rem;
+	padding: 0.2rem;
+	border-radius: 5px;
+	text-align: center;
+	width: unset !important;
+}
+.card-footer p + p span {
+	font-weight: 700;
+}
+
+.right {
+	background-color: #1179bf;
+	padding: 3rem;
+	padding-top: 2rem;
+	/* flex-grow: 1; */
+	width: 30%;
+	color: #ffffff;
+	font-size: 1rem;
+}
+
+.right ul li {
+	list-style-type: none;
+}
+.right ul li::before {
+	content: "\f058";
+	font-family: FontAwesome;
+	color: #ffffff;
+	font-weight: light;
+	padding-right: 1rem;
+	/* list-style-image: url("./circle-check-regular.svg"); */
+}
+.right .role {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+.right .price {
+	font-size: 1.5rem;
+}
+.right .price sup {
+	position: relative;
+	top: -1.2rem;
+}
+.right .price span {
+	font-size: 4rem;
+	font-weight: 200;
+}
+.right .renewal {
+	font-style: italic;
+	padding-bottom: 1.5rem;
+}
+.right .top ul li {
+	padding-bottom: 0.5rem;
+}
+.right .question {
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+.question + p a {
+	color: #ffffff;
+}
+.question + p {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #ffffff60;
+}
+.right .bottom p {
+	font-size: 1rem;
+	padding-top: 2rem;
+}
+.right .bottom p span {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.right .bottom .flex {
+	display: flex;
+	padding-top: 1rem;
+	align-items: center;
+}
+.right .bottom .flex img {
+	padding-right: 1rem;
+}
+.right .bottom .flex p {
+	text-transform: capitalize;
+	padding-top: 0 !important;
+}
+footer p {
+	font-size: 0.875rem;
+	text-align: center;
+	color: #636b6f;
+	margin-top: -3rem;
+}
+footer p a {
+	color: #31708f;
+	text-decoration: none;
+}
